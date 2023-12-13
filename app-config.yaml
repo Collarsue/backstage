@@ -64,7 +64,13 @@ techdocs:
 
 auth:
   # see https://backstage.io/docs/auth/ to learn about auth providers
-  providers: {}
+  environment: development
+  providers:
+    gitlab:
+      development:
+        clientId: 822c4de19bff691f4de9e8700a7ec9298303bf69557dd8c4a82f0ef64f01ddf3
+        clientSecret: gloas-2fba9356fd847536a011004256c2f71645bda71bd3b88afead73a32459b55a56
+        callbackUrl: http://localhost:7007/api/auth/gitlab/handler/frame
 
 scaffolder:
   # see https://backstage.io/docs/features/software-templates/configuration for software template options
